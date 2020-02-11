@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Calendar</title>
+<style>
+    .container{
+        background-color: black;
+        height: 720px;
+        width: auto;
+        border: 1px solid red;
+        color: white;
+        margin: 15px 25px 25px 10px;
+
+    }
+    
+    .header{
+        height: auto;
+        width: auto;
+        display: flex;
+        align-content: center;
+        justify-content: center;
+        color: red;
+    }
+    .middle{
+        height: auto;
+        width: auto;
+        display: flex;
+        align-content: center;
+        justify-content: center;
+    }
+    .containform{
+        height: auto;
+        width: auto;
+        display: flex;
+        align-content: center;
+        justify-content: center;
+    }
+    
+</style>
+</head>
+<body>
+    <div class="container">
+    <div class="header">
+        <h1>All Year Calendar</h1>
+    </div>
+    <div class="middle">
+        <p>Welcome to all year calendar just enter the year for which you want the calendar</p>
+         </div>
+        <div class="containform"> 
+        <form action="{% url 'sendyear' %}">
+            <br><br>
+            <label>Enter Year : <input type="text" style="margin: 0px 10px" name="year"></label><br><br>
+            <input type="submit" value="SUBMIT" style="margin:0px 88px">
+            
+        </form>
+        </div>
+        
+        
+   
+    
+    
+    </div>
+    
+</body>
+</html>
